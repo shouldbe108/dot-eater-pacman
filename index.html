@@ -1,0 +1,32 @@
+<!doctype html>
+<!-- Declares HTML5 document type for modern rendering. -->
+<html lang="en">
+  <!-- Root element of the page; lang="en" for accessibility/screen readers. -->
+  <head>
+    <!-- Contains metadata; not visible on page. -->
+    <meta charset="utf-8" />
+    <!-- Sets character encoding to UTF-8 for international text support. -->
+    <title>Mini Pac-Dot Game</title>
+    <!-- Sets browser tab title. -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- Links external CSS file for all styling. -->
+  </head>
+  <body>
+    <!-- Visible content starts here. -->
+    <div class="game-wrapper">
+      <!-- Flex container for centering game and info vertically/horizontally. -->
+      <div id="game"></div>
+      <!-- Grid container where maze cells will be dynamically inserted by JS. -->
+      <div class="info">
+        <!-- Static text instructions. -->
+        Use arrow keys to move. Eat all the <span>dots</span>.
+        <!-- Inline <span> for yellow styling on "dots". -->
+        <div id="status"></div>
+        <!-- Dynamic status text updated by JS (e.g., dots left). -->
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+    <!-- Loads external JS file at end of body for faster page load (DOM ready). -->
+  </body>
+</html>
